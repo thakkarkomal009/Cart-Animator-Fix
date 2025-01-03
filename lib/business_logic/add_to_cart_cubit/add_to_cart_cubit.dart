@@ -12,7 +12,6 @@ class AddToCartCubit extends Cubit<AddToCartState> {
 
   void addToCartAnimation(Function runAddToCartAnimation) {
     runCartAnimation = (GlobalKey widgetKey, GlobalKey<CartIconKey> cartKey) {
-      // Now, call the passed function (runAddToCartAnimation)
       runAddToCartAnimation(widgetKey, cartKey: cartKey);
     };
   }
