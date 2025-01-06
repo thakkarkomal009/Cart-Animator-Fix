@@ -64,8 +64,7 @@ class _CategoryWiseProductScreenState extends State<CategoryWiseProductScreen> {
                 },
                 child: Wrap(
                   children: [
-                    BlocConsumer<AddToCartCubit, AddToCartState>(
-                      listener: (context, state) {},
+                    BlocBuilder<AddToCartCubit, AddToCartState>(
                       builder: (context, state) {
                         if (state is ProductCount) {
                           count = state.count;
